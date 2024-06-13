@@ -13,6 +13,7 @@
       margin: 0;
       padding: 0;
       color: #333;
+      background-color: #f4f4f4;
     }
 
     .header {
@@ -88,59 +89,143 @@
       line-height: 1.6;
     }
 
-    .content .card {
-      display: inline-block;
-      width: 300px;
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1 1 calc(33% - 40px);
       margin: 20px;
       padding: 20px;
       background-color: white;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       text-align: left;
+      max-width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .content .card img {
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .card img {
       width: 100%;
       height: auto;
       border-radius: 10px;
     }
 
-    .content .card h3 {
+    .card h3 {
       font-size: 1.5em;
       margin: 10px 0;
     }
 
-    .content .card p {
+    .card p {
       font-size: 1em;
       color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 3em;
+      }
+
+      .header p {
+        font-size: 1.2em;
+      }
+
+      .card {
+        flex: 1 1 100%;
+        max-width: none;
+      }
     }
   </style>
 </head>
 <body>
   <div class="header">
     <div class="header-content">
-      <h1>Welcome to Our Adventure</h1>
-      <p>Discover the most amazing places around the world</p>
-      <a href="explore.html" class="btn">Explore Now</a>
+      <h1>Reference Page</h1>
+    
     </div>
   </div>
   <div class="content">
-    <h2>Featured Destinations</h2>
-    <div class="card">
-      <img src="https://example.com/destination1.jpg" alt="Destination 1"> <!-- Replace with your image URL -->
-      <h3>Paris, France</h3>
-      <p>Experience the romantic city of lights with its iconic Eiffel Tower, art museums, and cafes.</p>
-    </div>
-    <div class="card">
-      <img src="https://example.com/destination2.jpg" alt="Destination 2"> <!-- Replace with your image URL -->
-      <h3>Kyoto, Japan</h3>
-      <p>Explore the historic temples, beautiful gardens, and traditional tea houses of Kyoto.</p>
-    </div>
-    <div class="card">
-      <img src="https://example.com/destination3.jpg" alt="Destination 3"> <!-- Replace with your image URL -->
-      <h3>Maui, Hawaii</h3>
-      <p>Relax on the stunning beaches of Maui and enjoy its lush landscapes and vibrant culture.</p>
-    </div>
-  </div>
+
+    <div class="cards">
+      <div class="card">
+        <a href="https://www.chinahighlights.com/beijing/attraction/summer-palace.htm" target="_blank"> <!-- Link to the website -->
+    
+          <h3>The Summer Palace</h3>
+          
+        </a>
+
+          <a href="https://www.tripadvisor.ca/Attractions-g294212-Activities-Beijing.html" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Beijing</h3>
+          
+        </a>
+
+          <a href="https://www.chinahighlights.com/travelguide/special-report/china-top-tourist-cities/" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Top Cities For Travelling in China</h3>
+          
+        </a>
+
+          <a href="https://www.expatsholidays.com/explore-6-endemic-animals-in-china" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Explore Animals in China</h3>
+          
+        </a>
+
+          <a href="https://www.chinahighlights.com/giant-panda/sichuan-giant-panda-sanctuaries.htm" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Sichuan Giant Pandas</h3>
+          
+        </a>
+
+          <a href="https://www.chinadiscovery.com/sichuan/kangding/mount-gongga.html" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Mount Gongga</h3>
+          
+        </a>
+
+          <a href="https://whc.unesco.org/en/list/437/" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Mount Tai</h3>
+          
+        </a>
+
+          <a href="https://https://whc.unesco.org/en/list/547/" target="_blank"> <!-- Link to the website -->
+    
+          <h3>The Yellow Mountain</h3>
+          
+        </a>
+
+           <a href="https://www.chinadiscovery.com/yunnan/shangri-la/meili-snow-mountain.html" target="_blank"> <!-- Link to the website -->
+    
+          <h3>Meili Snow Mountains</h3>
+          
+        </a>
+
+          <a href="https://www.chinahighlights.com/beijing/forbidden-city/" target="_blank"> <!-- Link to the website -->
+    
+          <h3>The Forbidden City</h3>
+          
+        </a>
+
+          <a href="https://whc.unesco.org/en/list/438/" target="_blank"> <!-- Link to the website -->
+    
+          <h3>The Great Wall</h3>
+          
+        </a>
+      </div>
+      
 </body>
 </html>
