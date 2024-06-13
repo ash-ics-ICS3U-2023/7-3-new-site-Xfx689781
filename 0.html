@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&display=swap" rel="stylesheet"> 
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      position: relative;
+      height: 70vh;
+      background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 4em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .header p {
+      font-size: 1.5em;
+      margin: 20px 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 80px 120px; /* Added padding to move the content away from the edge */
+      background-color: #fff;
+      align-items: center;
+    }
+
+    .content-text {
+      flex: 1;
+      min-width: 300px;
+      margin-right: 20px;
+    }
+
+    .content h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #c03030;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      line-height: 1.6;
+      color: #036970;
+    }
+
+    .content img {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover; /* Ensure the image covers the container without stretching */
+      flex-shrink: 0;
+      margin-left: 40px; /* Added margin to move the image away from the edge */
+    }
+
+    .next-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      flex-basis: 100%;
+    }
+
+    .next-page a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #c03030;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .next-page a:hover {
+      background-color: #a02828;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <h1>NATURAL SCENERY</h1>
+      <p>Discover the beautiful sceneries of China</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-text">
+      <h2>About China's Geography</h2>
+      <p style="text-indent:60px; line-height: 2">China is located in the eastern part of Asia, on the western coast of the Pacific Ocean. China's terrain varies greatly, from high mountainous areas to desolate desert areas and flat fertile plains, which in turn lead to the great variation of natural scenery in China. Therefore, discover where nature in China is bigger, better, and more wonderful than anywhere else in the world. Here, we're going to introduce the mountains, famous water-bodies and some other interesting scenery spots to visit in China! Consider these natural landmarks in China for your next trip!!!</p>
+      
+   
+    </div>
+    <div class="content-section mountain-section">
+        <div class="content-text">
+          <h2>MOUNTAINS</h2>
+          <h3>The Yellow Mountain (Huangshan)</h3>
+          <p style="line-height: 2; text-indent: 60px">
+            Known as "the loveliest mountain of China", the area is well known for its scenery, sunsets, peculiarly-shaped granite peaks, Huangshan pine trees, hot springs, winter snow and views of the clouds from above. Huangshan is a frequent subject of traditional Chinese paintings and literature, as well as modern photography. It is a UNESCO World Heritage Site and one of China's major tourist destinations.
+          </p>
+          <p style="line-height: 2; text-indent: 60px">
+            It is worth mentioning that the area has diverse flora, where one-third of China's bryophyte families and more than half of its fern families are represented. The Huangshan pine (Pinus hwangshanensis) is named after Huangshan and is considered an example of vigor because the trees thrive by growing straight out of the rocks.
+          </p>
+          <a class="learn-more" href="https://whc.unesco.org/en/list/547" target="_blank">>> learn more</a>
+        </div>
+        <img src="img/3.jpg" alt="Beautiful Landscape of China">
+      </div>
+      <div class="content-section mountain-section">
+        <img src="img/2.jpg" alt="Mount Gongga" class="image-left">
+        <div class="content-text">
+          <h3>Mount Gongga</h3>
+          <p style="line-height: 2; text-indent: 60px">
+              Mount Gongga, also known as Minya Konka and colloquially as "The King of Sichuan Mountains", is the highest mountain in Sichuan province, China. It has an elevation of 7,556m above sea level. This makes it the third highest peak in the world outside of the Himalaya/Karakoram range.
+          </p>
+          <p style="line-height: 2; text-indent: 60px">
+            The area has diverse flora, where one-third of China's bryophyte families and more than half of its fern families are represented. The Huangshan pine (Pinus hwangshanensis) is named after Huangshan and is considered an example of vigor because the trees thrive by growing straight out of the rocks.
+          </p>
+          <a class="learn-more" href="https://whc.unesco.org/en/list/547" target="_blank">>> learn more</a>
+        </div>
+      </div>
+      <div class="next-page">
+        <h3>WATER BODIES</h3>
+        <h3>INTERESTING PLACES TO VISIT</h3>
+        <a href="cultural_sites.html">Next Page</a>
+      </div>
+    </div>
+      <h3>WATER BODIES</h3>
+      <h3>INTERESTING PLACES TO VISIT</h3>
+      <a href="cultural_sites.html">Next Page</a>
+    </div>
+  </div>
+</body>
+</html>
