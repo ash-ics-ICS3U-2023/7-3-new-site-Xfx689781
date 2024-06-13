@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .header {
+      position: relative;
+      height: 70vh;
+      background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header h1 {
+      font-size: 4em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .header p {
+      font-size: 1.5em;
+      margin: 20px 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .content {
+      padding: 80px 120px;
+      background-color: #fff;
+    }
+
+    .content-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+
+    .content-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .content h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #c03030;
+    }
+
+    .content p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      color: #036970;
+    }
+
+    .content img {
+      width: 330px;
+      height: 330px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover; /* Ensure the image covers the container without stretching */
+      flex-shrink: 0;
+      margin-left: 20px; /* Added margin to move the image away from the text */
+    }
+
+    .next-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      flex-basis: 100%;
+    }
+
+    .next-page a {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #c03030;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .next-page a:hover {
+      background-color: #a02828;
+    }
+
+    .mountain-section {
+      margin-top: -20px; /* Adjust this value to move the "MOUNTAINS" section up */
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <h1>BEAUTIFUL CITIES TO VISIT</h1>
+      <p>Discover the top cities for tourists in China</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-section">
+      
+    <div class="content-section mountain-section">
+        <div class="content-text">
+          <h2>BEIJING</h2>
+          <p style="line-height: 2; text-indent: 60px">
+           Beijing, China's capital city for over 700 years, is rich in history, both ancient and modern. There are many palace complexes in Beijing, as well as super-modern buildings.It's very easy to get to Beijing, and it's one of the first choices for many first-time travelers to China. Flights and high-speed trains from Beijing to other popular cities are very convenient.
+           </p>
+          <h3>The Summer Palace</h3>
+          <p style="line-height: 2; text-indent: 60px">
+            I've introduced the Great Wall and the Forbidden City on the second page of the website, and here I'm going to introduce a similar one: the Summer Palace.The Summer Palace (Yiheyuan), in northwest Beijing, is said to be the best-preserved imperial garden in the world, and the largest of its kind still in existence in China. It is only a short drive of 15 km (10 miles) from central Beijing, but it seems like another world.
+
+Most people find they need to spend at least half a day there, as there's so much to see and enjoy. 
+          </p>
+          <h3>Yudu Mountain</h3>
+          <p style="line-height: 2; text-indent: 60px">
+            A scenic hiking and family camping spot. The primary attraction is the mountain meadow, a large field with a view of the mountain. The Mountain Meadow is packed with families who have pitched tents for the day. For a quiet nearby hike, choose the route that goes to the Second Sino-Japanese War memorial on the mountain top  </p>
+        </div>
+        <img src="img/3.jpg" alt="Beautiful Landscape of China" style="margin-top: 120px;"> <!-- Image URL updated -->
+      </div>
+    
+    <div class="content-text">
+          <h2>Shanghai</h2>
+          <p style="line-height: 2; text-indent: 60px"> 
+          Shanghai, China's biggest city, oozes an atmosphere of vitality which can rival New York and Paris in terms of modernity. As one of the world's leading economic and business cities, Shanghai's modernity is evidenced by the ambitious skyline.
+    Unlike Beijing, there are not many famous tourist attractions in Shanghai. However, the beauty of visiting Shanghai lies not in scurrying from site to site but in the feel of the city's modern atmosphere.
+    </p>
+    <h2>Huangshan</h2>
+    <p style="line-height: 2; text-indent: 60px">
+      Huangshan is steeped in picturesque natural landscapes and history. Marvel at the peculiarly-shaped rocks and pines on the Yellow Mountains, appreciate the ancient-styled dwellings in Xidi and Hongcun villages.
+      The Yellow Mountains give people a stunning mountain views, and ancient villages present ancient China's elegance and tranquility with well-preserved ancient folk houses and flowing rivers.
+     </p>
+      <h2>Lhasa</h2>
+    <p style="line-height: 2; text-indent: 60px">
+      Lhasa, capital of Tibet, is the center of Tibetan cultural and religious life. Most tourists enter Tibet via Lhasa. Outside the city is Tibet's wealth of natural wonders and holy sites, from Lake Namtso to Mt. Everest, to Mount Kailash."Lhasa" is Tibetan for "place of the gods", and is revered as such. There are many sites and religious sites in the city proper and its suburbs. At Barkhor Street, visitors can go souvenir hunting, rub shoulders with locals, and experience the sacred "one step one bow" way to religion.
+      </p>
+      <h2>Lijiang</h2>
+    <p style="line-height: 2; text-indent: 60px">
+      With snow-clad mountain scenery, rippling lakes, and historical heritages, including 800-year-old small town and diverse ethnic minority cultures, Lijiang has become one of the most beautiful cities in China. You could feel the beauty of Lijiang everywhere, when strolling along the cobbled streets and appreciating the ancient dwelling houses built by gurgling rivers in Lijiang Old Town, or admiring the sublime Jade Dragon Snow Mountain, exploring mysterious Lugu Lake. Lijiang creates a peaceful ambience for tourists to relax and immerse in the views.
+      </p>
+      <h2>Sanya</h2>
+    <p style="line-height: 2; text-indent: 60px">
+     More than mountains and various rocks, the beautiful scenery along the hundreds of kilometers of coastline and dense tropical rainforests make Sanya one of the most beautiful cities in China. Beach, snorkeling and seafood are the three eternal themes of Sanya tour. Sanya boasts the Asia’s first-rate beach in Yalong Bay, with the best-quality water for snorkeling to see the coral reefs and colorful tropical fish; the largest Guanyin statue above the sea in the world - Nanhai Guanyin Statue; and Yanoda Rainforest, a natural oxygen bar that composed of giant banyans, old vines, grotesque rocks, and spectacular waterfalls.
+     </p>
+
+      <h2>Chengdu</h2>
+    <p style="line-height: 2; text-indent: 60px">
+    Chengdu is the capital of southwestern China's Sichuan province. Chengdu's history dates back to at least the 4th century B.C., when it served as capital for the Shu Kingdom. Artifacts from that dynasty are the focus of the Jinsha Site Museum. The city is also home to the famous Chengdu Research Base of Giant Panda Breeding, a conservation center where visitors can view endangered giant pandas in a natural habitat. 
+       </p>
+
+         <h2>Chongqing</h2>
+    <p style="line-height: 2; text-indent: 60px">
+    Chongqing is a sprawling municipality at the confluence of the Yangtze and Jialing rivers in southwestern China. In the city center, the large, domed Great Hall of the People complex stands above pedestrianized People's Square. On the other side of the square, the Three Gorges Museum features artifacts from the construction of the Three Gorges Dam as well as ancient art.   </p>
+     
+    <a class="learn-more" href="https://www.chinahighlights.com/travelguide/special-report/china-top-tourist-cities/" target="_blank">>> learn more</a>
+    
+   </div>
+      <img src="img/2.jpg" alt="Beautiful Landscape of China" style="margin-top: 40px; width: 290px; height:290px; margin-bottom: 20px;">
+      <img src="img/4.jpg" alt="Beautiful Landscape of China" style="margin-top: 40px; margin-left: 30px; margin-bottom: 20px;width: 290px; height:290px; ">
+      <img src="img/5.jpg" alt="Beautiful Landscape of China" style="margin-top: 40px; margin-left: 30px; margin-bottom: 20px;width: 290px; height:290px; ">
+      <img src="img/6.jpg" alt="Beautiful Landscape of China" style="margin-top: 40px; margin-left: 30px; margin-bottom: 20px;width: 290px; height:290px; ">
+
+     </div>
+    <div class="next-page">
+      
+      <a href="historic_sites.html">Next Page</a>
+    </div>
+  </div>
+</body>
+</html>
